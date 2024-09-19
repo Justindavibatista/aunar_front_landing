@@ -1,50 +1,77 @@
+import AUNAR from '../assets/logo.jpg';
+
 export default function home() {
   return (
-    <div className="min-h-screen bg-gray-100">
-      {/* Encabezado */}
-      <header className="bg-yellow-500 text-white py-4">
-        <div className="container mx-auto flex justify-between items-center px-4">
-          <img
-            src="ruta-logo-aqui" // Sustituye por la ruta del logo
-            alt="Logo"
-            className="h-12"
-          />
-          <nav className="flex space-x-6">
-            <a href="#" className="hover:underline">Inicio</a>
-            <a href="#" className="hover:underline">Comunidades</a>
-            <a href="#" className="hover:underline">Navegar</a>
-            <a href="#" className="hover:underline">Estadísticas</a>
-            <a href="#" className="hover:underline">Contactos</a>
-          </nav>
-          <div className="flex space-x-4">
-            <select className="bg-yellow-500 border-none text-white">
-              <option>Español</option>
-              <option>Inglés</option>
-            </select>
-            <button className="bg-blue-600 hover:bg-blue-700 text-white py-1 px-3 rounded">
-              Iniciar sesión
-            </button>
-          </div>
-        </div>
-      </header>
+    <div className="">
 
-      {/* Contenido principal */}
-      <main className="container mx-auto py-12 px-4">
-        <section className="bg-gray-800 text-white p-6 rounded-lg">
-          <h1 className="text-4xl font-bold mb-4 text-yellow-300">Repositorio Institucional</h1>
-          <p className="text-lg mb-6">
-            Iluminando nuestro camino hacia la comprensión y el crecimiento personal.
-          </p>
-          <div className="flex justify-center mb-6">
-            <input
-              type="text"
-              placeholder="Buscar en el Repositorio..."
-              className="w-2/3 p-2 rounded-lg border border-gray-300 text-gray-900"
-            />
+      {/* Contenedor del encabezado */}
+      <div className="header-container">
+        <header className="bg-[linear-gradient(to_bottom,_#F8DC0B_80%,_#034873_25%)] text-white py-4">
+          <div className="container mx-auto px-4">
+            <div className="flex justify-between items-center">
+              <img src={AUNAR.src} alt="Descripción" className="w-80 h-auto" />
+              <div className="flex items-center space-x-4">
+                <select className="bg-[#034873] border-none text-[#F8DC0B] px-4 py-1 rounded-lg">
+                  <option>Español</option>
+                  <option>Inglés</option>
+                </select>
+                <button className="bg-white hover:bg-blue-700 text-[#034873] px-4 py-1 rounded-lg">
+                  Iniciar sesión
+                </button>
+              </div>
+            </div>
+            <nav className="flex justify-end space-x-6 mt-4">
+              <a href="#">
+                <button className="bg-[#034873] text-[#F8DC0B] px-4 py-1 rounded-lg hover:bg-opacity-90">
+                  Inicio
+                </button>
+              </a>
+              <a href="#">
+                <button className="bg-[#034873] text-[#F8DC0B] px-4 py-1 rounded-lg hover:bg-opacity-90">
+                  Comunidades
+                </button>
+              </a>
+              <a href="#">
+                <button className="bg-[#034873] text-[#F8DC0B] px-4 py-1 rounded-lg hover:bg-opacity-90">
+                  Navegar
+                </button>
+              </a>
+              <a href="#">
+                <button className="bg-[#034873] text-[#F8DC0B] px-4 py-1 rounded-lg hover:bg-opacity-90">
+                  Estadísticas
+                </button>
+              </a>
+              <a href="#">
+                <button className="bg-[#034873] text-[#F8DC0B] px-4 py-1 rounded-lg hover:bg-opacity-90">
+                  Contactos
+                </button>
+              </a>
+            </nav>
           </div>
-        </section>
+        </header>
+      </div>
 
-        {/* Sección de íconos */}
+      {/* Contenedor del contenido principal */}
+      <div className="main-content-container">
+        <main className="container mx-auto py-12 px-4">
+          <section className="bg-gray-800 text-white p-6 rounded-lg">
+            <h1 className="text-4xl font-bold mb-4 text-yellow-300">Repositorio Institucional</h1>
+            <p className="text-lg mb-6">
+              Iluminando nuestro camino hacia la comprensión y el crecimiento personal.
+            </p>
+            <div className="flex justify-center mb-6">
+              <input
+                type="text"
+                placeholder="Buscar en el Repositorio..."
+                className="w-2/3 p-2 rounded-lg border border-gray-300 text-gray-900"
+              />
+            </div>
+          </section>
+        </main>
+      </div>
+
+      {/* Contenedor de los íconos */}
+      <div className="icons-container">
         <section className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
           <div className="flex flex-col items-center">
             <img src="ruta-icono-1" alt="Objeto de Aprendizaje" className="h-16 mb-2" />
@@ -67,7 +94,7 @@ export default function home() {
             <p className="text-center">Investigación Formativa</p>
           </div>
         </section>
-      </main>
+      </div>
     </div>
   )
 }
