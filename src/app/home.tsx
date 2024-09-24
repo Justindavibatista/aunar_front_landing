@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className="">
 
-      {/* Contenedor del encabezado */}
+      
       <div className="header-container">
         <header className="bg-[linear-gradient(to_bottom,_#F8DC0B_80%,_#034873_25%)] text-white py-4">
           <div className="container mx-auto px-4">
@@ -81,7 +81,7 @@ export default function Home() {
           </section>
         </main>
 
-        {/* Contenedor de los íconos */}
+        
         <div className="icons-container">
           <section className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 text-center">
             <div className="flex flex-col items-center">
