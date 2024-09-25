@@ -67,7 +67,7 @@ export default function Home() {
               backgroundPosition: 'center',
             }}
           >
-            <h1 className="text-4xl font-bold mb-4 text-yellow-300">Repositorio Institucional</h1>
+            <h1 className="text-4xl font-bold mb-4 text-yellow-300"> Institucional</h1>
             <p className="text-lg mb-6">
               Iluminando nuestro camino hacia la comprensión y el crecimiento personal.
             </p>
