@@ -1,18 +1,16 @@
 import AUNAR from '../assets/logo.jpg';
-import aprendizaje from '../assets/aprendizaje.png'
-import investigacion from '../assets/investigacion.png'
-import Institucional from '../assets/institu.png'
-import Projegrado from '../assets/institu.png'
-import grado from '../assets/graduado.png'
-import fondo from '../assets/imagenprincipal.jpg'
+import aprendizaje from '../assets/aprendizaje.png';
+import investigacion from '../assets/investigacion.png';
+import Institucional from '../assets/institu.png';
+import Projegrado from '../assets/institu.png';
+import grado from '../assets/graduado.png';
+import fondo from '../assets/imagenprincipal.jpg';
 
-export default function Home() {
+export default function Home() {  // Asegúrate de que el componente esté bien nombrado
   return (
-    <div className="">
-
-      
+    <div className="">  
       <div className="header-container">
-        <header className="bg-[linear-gradient(to_bottom,_#F8DC0B_80%,_#034873_25%)] text-white py-4">
+        <header className="bg-[linear-gradient(to_bottom,#F8DC0B_80%,#034873_25%)] text-white py-4">
           <div className="container mx-auto px-4">
             <div className="flex justify-between items-center">
               <img src={AUNAR.src} alt="Logo AUNAR" className="w-80 h-auto" />
@@ -62,7 +60,6 @@ export default function Home() {
           <section
             className="bg-gray-800 text-white p-6 rounded-lg text-center relative"
             style={{
-              backgroundImage: `url(${fondo.src})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
             }}
@@ -81,7 +78,6 @@ export default function Home() {
           </section>
         </main>
 
-        
         <div className="icons-container">
           <section className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 text-center">
             <div className="flex flex-col items-center">
@@ -110,4 +106,3 @@ export default function Home() {
     </div>
   );
 }
-
